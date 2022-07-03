@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-    /* border: 1px solid red; */
 }
 
 body {
@@ -40,7 +39,19 @@ main {
 
 .right div {
     background-color: hsl(248, 32%, 49%);
-    padding: 10px;
+    padding: 2px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 8px rgba(22, 22, 22, 0.164);
+}
+
+.right h4 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.right h4 span {
+    font-weight: 600;
 }
 
 form {
@@ -48,9 +59,18 @@ form {
     flex-direction: column;
     background-color: white;
     color: black;
-    height: 20em;
-    padding: 20px;
+    padding: 40px;
     justify-content: space-between;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 6px rgba(22, 22, 22, 0.295);
+}
+
+form input {
+    height: 4em;
+    padding-left: 20px;
+    border-radius: 10px;
+    font-weight: 600;
 }
 
 button {
@@ -58,7 +78,22 @@ button {
     border: none;
     color: white;
     text-transform: uppercase;
-    padding: 15px;
+    padding: 20px;
     border-radius: 5px;
     cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+form p {
+    color: lightgrey;
+    font-size: smaller;
+    text-align: center;
+    margin-top: 0;
+}
+
+form a {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+    font-weight: 600;
 }
