@@ -30,7 +30,12 @@ main {
 
 .left {
     width: 50%;
-    padding: 5em;
+    padding: 2em;
+}
+
+.left h1 {
+    font-size: 3rem;
+    line-height: 1.1;
 }
 
 .right {
