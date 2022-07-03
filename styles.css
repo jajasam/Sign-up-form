@@ -96,6 +96,10 @@ form input {
     color: hsla(246, 25%, 77%, 0.733);
 }
 
+form span {
+    height: 0.75rem;
+}
+
 input:not([value=""]):not(:focus):invalid {
     background: white url(./images/icon-error.svg) no-repeat 95% 50%;
     border-color: red;
@@ -107,7 +111,6 @@ input:not([value=""]):not(:focus):invalid + span::after {
     font-size: x-small;
     position: absolute;
     margin-top: 0;
-
 }
 
 .free-trial_btn  {
