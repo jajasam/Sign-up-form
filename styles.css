@@ -2,57 +2,77 @@
 
 * {
     box-sizing: border-box;
+    border: 1px solid red;
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left {
+        text-align: center;
+    }
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     color: white;
     background-image: url(./images/bg-intro-desktop.png);
     background-color: hsl(0, 100%, 74%);
     display: flex;
-    margin: auto;
     height: 100vh;
+    /* justify-content: center; */
 }
 
 main {
     display: flex;
-    width: 80%;
     margin: auto;
 }
 
 .container {
     display: flex;
-    width: 100em;
-    height: 80vh;
     align-items: center;
+    /* width: 100%; */
+    margin: 1em;
 }
 
 .left {
-    width: 50%;
-    padding: 2em;
+    /* padding: 1em; */
+    margin: auto;
+    padding-right: 1rem;
 }
 
 .left h1 {
-    font-size: 3rem;
+    font-size: 2em;
     line-height: 1.1;
+    max-width: 30rem;
+}
+
+.left p {
+    max-width: 35rem;
 }
 
 .right {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 .right div {
     background-color: hsl(248, 32%, 49%);
-    padding: 2px;
-    margin-bottom: 20px;
+    padding: 1.2rem;
+    margin-bottom: 1em;
     border-radius: 10px;
     box-shadow: 2px 8px rgba(22, 22, 22, 0.164);
 }
 
 .right h4 {
+    margin: 0;
     text-align: center;
     font-weight: 400;
+    font-size: 0.9rem;
 }
 
 .right h4 span {
@@ -64,18 +84,19 @@ form {
     flex-direction: column;
     background-color: white;
     color: black;
-    padding: 40px;
+    padding: 2rem;
     justify-content: space-between;
-    gap: 20px;
+    gap: 1em;
     border-radius: 10px;
     box-shadow: 3px 6px rgba(22, 22, 22, 0.295);
 }
 
 form input {
     height: 4em;
-    padding-left: 20px;
+    padding-left: 25px;
     border-radius: 10px;
     font-weight: 600;
+    border-color: hsl(246, 25%, 77%);
 }
 
 button {
@@ -83,16 +104,17 @@ button {
     border: none;
     color: white;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 1rem;
     border-radius: 5px;
     cursor: pointer;
     letter-spacing: 1px;
     font-weight: 700;
+    font-size: 0.8rem;
 }
 
 form p {
-    color: lightgrey;
-    font-size: smaller;
+    color: hsl(246, 25%, 77%);
+    font-size: 0.6rem;
     text-align: center;
     margin-top: 0;
 }
